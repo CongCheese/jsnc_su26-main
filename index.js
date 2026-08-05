@@ -19,5 +19,5 @@ const book = {
     price: 20000
 };
 console.log(book);
-
+console.log(age==21);
 alert("jsnc");
