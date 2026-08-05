@@ -20,4 +20,9 @@ const book = {
 };
 console.log(book);
 console.log(age==21);
-alert("jsnc");
+// alert("jsnc");
+
+const h1 = document.getElementById("title");
+console.log(h1);
+const title = "danh sách sản phẩm"
+h1.innerHTML = `danh sách sản phẩm ${title}`
