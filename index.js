@@ -11,15 +11,16 @@ console.log (local);
 console.log (email);
 console.log (birthYear);
 console.log (school);
+console.log(age==21);
 let isAdmim = true;
 
 const book = {
     id:1,
-    name: "Java",
+    nameBook: "Java",
     price: 20000
 };
 console.log(book);
-console.log(age==21);
+console.log(book.nameBook);
 // alert("jsnc");
 
 const h1 = document.getElementById("title");
