@@ -1,23 +1,23 @@
-let Name = "Nguyễn Chí Công";
+let name = "Nguyễn Chí Công";
 name = "Nguyễn Chí Công 1";
-let Local = "Mỹ Đình";
-let School = "FPT Polytechnic"
-let Email = "chesecong@gmail.com";
+let local = "Mỹ Đình";
+let school = "FPT Polytechnic"
+let email = "chesecong@gmail.com";
 const birthYear = 2004;
 let age = 22;
 
-console.log (Name);
-console.log (Local);
-console.log (Email);
+console.log (name);
+console.log (local);
+console.log (email);
 console.log (birthYear);
-
+console.log (school);
 let isAdmim = true;
 
-const Book = {
+const book = {
     id:1,
     name: "Java",
     price: 20000
 };
-console.log(Book);
+console.log(book);
 
 alert("jsnc");
