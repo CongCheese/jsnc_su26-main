@@ -1,6 +1,7 @@
 let Name = "Nguyễn Chí Công";
 name = "Nguyễn Chí Công 1";
 let Local = "Mỹ Đình";
+let School = "FPT Polytechnic"
 let Email = "chesecong@gmail.com";
 const birthYear = 2004;
 let age = 22;
