@@ -1,4 +1,4 @@
-let name = "Nguyễn Chí Công";
+let userName = "Nguyễn Chí Công";
 name = "Nguyễn Chí Công 1";
 let local = "Mỹ Đình";
 let school = "FPT Polytechnic"
@@ -6,7 +6,7 @@ let email = "chesecong@gmail.com";
 const birthYear = 2004;
 let age = 22;
 
-console.log (name);
+console.log (userName);
 console.log (local);
 console.log (email);
 console.log (birthYear);
@@ -16,11 +16,11 @@ let isAdmim = true;
 
 const book = {
     id:1,
-    nameBook: "Java",
+    bookName: "Java",
     price: 20000
 };
 console.log(book);
-console.log(book.nameBook);
+console.log(book.bookName);
 // alert("jsnc");
 
 const h1 = document.getElementById("title");
