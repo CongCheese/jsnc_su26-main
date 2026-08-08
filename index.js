@@ -8,12 +8,22 @@ axios.get("http://localhost:3000/products").then((res) => {
         <td class="px-4 py-2 border border-gray-300">${product.name}</td>
         <td class="px-4 py-2 border border-gray-300">${product.price}</td>
         <td class="px-4 py-2 border border-gray-300">
-            <div class="flex items-center justify-center gap-2">
-                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded">Edit</a>
-                <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">Delete</button>
-            </div>
+            <td>
+              <button onclick="deleteProduct(${product.id})">
+                Xóa
+              </button>
+            </td>
         </td>
     </tr>
 `;
     }).join("");
 }) 
+function deleteProduct(id){
+    const result = confirm ("Xóa?");
+
+    if(result){
+        axios.delete(`http://localhost:3000/products/${id}`).then(()=>{
+            loadProducts();
+        });
+}
+}   
