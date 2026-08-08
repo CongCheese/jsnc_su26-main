@@ -1,44 +1,19 @@
-// const student = {
-//   name: "Nguyễn Chi Cong",
-//   age: 20,
-//   email: "Cheseconggmail.com",
-//   major: "CNTT",
-// };
-// const table =`
-//     <tr>
-//   <td>${student.name}</td>
-//   <td>${student.age}</td>
-//   <td>${student.email}</td>
-//   <td>${student.major}</td>
-// </tr>
-// `
-// document.getElementById("student").innerHTML = table;
-
-const student = [
- {
-  name: "Nguyễn Chi Cong",
-  age: 20,
-  email: "Chesecong@gmail.com",
-  major: "CNTT",
-},
- {
-  name: "Nguyễn Chi",
-  age: 21,
-  email: "Chesescong@gmail.com",
-  major: "CNTT",
-},
-];
-const html = student
-  .map(
-    (student) => `
-<tr>
-  <td>${student.name}</td>
-  <td>${student.age}</td>
-  <td>${student.email}</td>
-  <td>${student.major}</td>
-</tr>
-`,
-  )
-  .join("");
-
-document.getElementById("student").innerHTML = html;
+axios.get("http://localhost:3000/products").then((res) => {
+    console.log("cal API", res.data);
+    const products = res.data;
+    document.getElementById("product").innerHTML = products.map((product) => {
+        return `
+<tr class="hover:bg-gray-50">
+        <td class="px-4 py-2 border border-gray-300">${product.id}</td>
+        <td class="px-4 py-2 border border-gray-300">${product.name}</td>
+        <td class="px-4 py-2 border border-gray-300">${product.price}</td>
+        <td class="px-4 py-2 border border-gray-300">
+            <div class="flex items-center justify-center gap-2">
+                <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded">Edit</a>
+                <button class="bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded">Delete</button>
+            </div>
+        </td>
+    </tr>
+`;
+    }).join("");
+}) 

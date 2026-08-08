@@ -1,16 +1,19 @@
 {
-  "books": [
+  "products": [
     {
       "id": 1,
-      "title": "Nhà giả kim",
-      "year": 2000,
-      "cover": "https://cdn0.fahasa.com/media/catalog/product/i/m/image_195509_1_36793.jpg"
+      "name": "iPhone 15",
+      "price": 25000000
     },
     {
       "id": 2,
-      "title": "Tôi thấy hoa vàng trên cỏ xanh",
-      "year": 2000,
-      "cover": "https://cdn0.fahasa.com/media/catalog/product/n/n/nna-hvtcx.jpg"
+      "name": "Samsung S25",
+      "price": 22000000
+    },
+    {
+      "id": 3,
+      "name": "Xiaomi 15",
+      "price": 18000000
     }
   ]
 }
