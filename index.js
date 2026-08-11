@@ -26,4 +26,5 @@ function deleteProduct(id){
             loadProducts();
         });
 }
-}   
+}  
+co
