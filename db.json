@@ -21,14 +21,9 @@
       "id": 4
     },
     {
-      "name": "cong",
-      "price": 3000000,
+      "name": "alex",
+      "price": "222",
       "id": 5
-    },
-    {
-      "name": "cong2",
-      "price": "99999999999",
-      "id": 6
     }
   ]
 }
