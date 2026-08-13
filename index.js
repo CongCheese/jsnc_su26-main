@@ -12,6 +12,9 @@ axios.get("http://localhost:3000/products").then((res) => {
               <button onclick="deleteProduct(${product.id})">
                 Xóa
               </button>
+                            <button onclick="goToEditPage(${product.id})">
+                sửa
+              </button>
             </td>
         </td>
     </tr>
@@ -27,4 +30,6 @@ function deleteProduct(id){
         });
 }
 }  
-co
+function goToEditPage(id){
+    window.location.href = `edit.html?id=${id}`;
+}
