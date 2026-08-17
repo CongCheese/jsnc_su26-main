@@ -26,5 +26,11 @@
       "id": 5
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "cong1@gmail.com",
+      "password": "$2a$10$ikgPvU4b8OVepH/vktJ6NOb3U2BLpGH.uUBp3Qci2xfDFDHPwJ2s6",
+      "id": 1
+    }
+  ]
 }
