@@ -27,3 +27,7 @@
     }
   ]
 }
+{
+  "users": []
+}
+"db": "json-server --watch db.json --port 3000 -m ./node_modules/json-server-auth"
